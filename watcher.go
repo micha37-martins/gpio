@@ -57,8 +57,8 @@ func (h fdHeap) FdSet() *syscall.FdSet {
 	return fdset
 }
 
-const watcherCmdChanLen = 32
-const notificationLen = 32
+const watcherCmdChanLen = 0
+const notificationLen = 0
 
 // Watcher provides asynchronous notifications on input changes
 // The user should supply it pins to watch with AddPin and then wait for changes with Watch
