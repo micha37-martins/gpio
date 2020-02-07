@@ -1,3 +1,19 @@
+INFO
+================
+
+This is a fork of:
+https://github.com/brian-armstrong/gpio
+
+It changes the queue length of the following constants from 32 to 0:
+const watcherCmdChanLen = 0
+const notificationLen = 0
+
+I use it to control multiple push buttons on a raspberry Pi. After pushing a
+button the original code will accept input of other buttons and execute them
+one after another. Setting the length of the queue to 0 prevents this behavior.
+So you could for example trigger a function with a button and wait until it has
+finished before accepting another buttons input.
+
 GPIO
 ================
 
