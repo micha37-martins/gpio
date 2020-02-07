@@ -4,9 +4,9 @@ INFO
 This is a fork of:
 https://github.com/brian-armstrong/gpio
 
-It changes the queue length of the following constants from 32 to 0:
-const watcherCmdChanLen = 0
-const notificationLen = 0
+It changes the queue length of the following constants from `32` to `0`:  
+- `const watcherCmdChanLen = 0`
+- `const notificationLen = 0`
 
 I use it to control multiple push buttons on a raspberry Pi. After pushing a
 button the original code will accept input of other buttons and execute them
